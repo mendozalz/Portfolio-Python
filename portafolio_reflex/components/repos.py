@@ -27,4 +27,9 @@ def repos(repos_list: list) -> rx.Component:
         for repo in repos_list
     ]
 
-    return rx.vstack(*repos_components, gap="20px", height="100%", justify_content="center")
+    return rx.vstack(
+        rx.box(rx.text("{Mis ultimos repos}"), width="100%"),
+        *repos_components, 
+        gap="20px", 
+        height="100%", 
+        justify_content="center")

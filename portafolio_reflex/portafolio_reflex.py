@@ -6,7 +6,10 @@ from .vistas.vista_repos import vista_repos
 from .vistas.vista_comentario import vista_comentario
 from .vistas.vista_portfolio import vista_portfolio
 
+
 from .components.contenedor import contenedor
+from portafolio_reflex.components.banner import banner
+from portafolio_reflex.components.navidad import navidad
 from .components.card import card
 from .components.repos import repos
 from portafolio_reflex.styles.colores import COLORES
@@ -14,6 +17,8 @@ from portafolio_reflex.styles.fonst_size import SIZE
 
 def index() -> rx.Component:
     return rx.box(
+        banner(),
+        navidad(),
         rx.container(
             rx.hstack(
                 rx.vstack(
@@ -36,7 +41,7 @@ def index() -> rx.Component:
         ),
         vista_comentario(),
         vista_portfolio(),
-        class_name="rxBox"
+        class_name="rxBox",
         )
 
 

@@ -5,9 +5,9 @@ from portafolio_reflex.styles.fonst_size import SIZE
 def footer() -> rx.Component:
     # Lista de diccionarios que contiene la información de cada imagen y enlace
     images_links_data = [
-        {"src": "/Linkeding.png", "width": "30px", "height": "auto", "filter": "invert(0%) sepia(25%) saturate(0%) hue-rotate(61deg) brightness(104%) contrast(100%)", "href": "#", "is_external": True},
-        {"src": "/GitHub.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "#", "is_external": True},
-        {"src": "/notion.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "#", "is_external": True}
+        {"src": "/Linkeding.png", "width": "30px", "height": "auto", "filter": "invert(0%) sepia(25%) saturate(0%) hue-rotate(61deg) brightness(104%) contrast(100%)", "href": "https://www.linkedin.com/in/mendozalz/", "is_external": True},
+        {"src": "/GitHub.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "https://github.com/mendozalz", "is_external": True},
+        {"src": "/notion.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "https://www.notion.so/mendozalz/Lenin-Mendoza-FrontEnd-Developer-8f6bebcfd9354f9db819f2e2e43fd14f", "is_external": True}
     ]
 
     # Crear dinámicamente las imágenes y enlaces usando la información de la lista
@@ -24,7 +24,7 @@ def footer() -> rx.Component:
             )
         ),
         bg=COLORES.NES.value,
-        width="100vw",
+        width="100%",
         height=SIZE.GRANDE_X5.value,
         display="grid",
         align_items="center"

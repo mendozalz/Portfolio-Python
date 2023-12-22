@@ -4,7 +4,7 @@ from ..styles.colores import COLORES
 from ..styles.fonst_size import SIZE
 
 
-tecnologias = ["React, Nextjs", "Astro", "Reflex", "y Wordpress"]
+tecnologias = ["Nextjs", "Astro", "Reflex", "y Wordpress"]
 tecnologias_secundarias = ["Bootraps", "Tailwind", "GSAP", "Markdown", "Web Components", "Figma", "Adobe XD", "Notion", "Airtable" ]
 
 
@@ -47,6 +47,5 @@ def  vista_comentario() -> rx.Component:
                 ),
         ),
         class_name="nes-container is-dark",
-        width="100vw",
     )
 vista = vista_comentario()

@@ -21,7 +21,10 @@ def  vista_hero() -> rx.Component:
                     rx.span("Lenin Mendoza", color= COLORES.TERCIARIO.value),
                     margin="0px", 
                     ),
-                rx.span(" Front-End Developer", color= COLORES.TERCIARIO.value),
+                rx.text(
+                    "Front-End",
+                    rx.span(" Developer", color= COLORES.TERCIARIO.value),
+                ),
                 aling_items = "start",
                 margin_top="10px"
             ),

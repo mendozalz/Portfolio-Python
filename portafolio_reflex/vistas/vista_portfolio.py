@@ -12,9 +12,9 @@ def  vista_portfolio() -> rx.Component:
                 rx.grid_item(
                     rx.link(
                         rx.card(
-                        rx.text("1Body of the Card Component", class_name="rxCardText"),
-                        header=rx.heading("Header", size="lg"),
-                        footer=rx.heading("Footer", size="sm"),
+                        rx.text("API Poemas AWS Lambda...", class_name="rxCardText"),
+                        header=rx.heading("Poemas", size="lg"),
+                        footer=rx.heading("AWS, API OpenAI", size="sm"),
                         height="100%",
                         transition= "all 0.3s ease-in-out",
                         _hover={
@@ -23,18 +23,19 @@ def  vista_portfolio() -> rx.Component:
                         },
                         padding_y="0px"
                         ),
-                    href="#",
+                    href="https://github.com/mendozalz/api-poemas",
                     is_external=True
-                    ),row_span=2, 
+                    ),
+                    row_span=2, 
                     col_span=1,
                     margin_bottom=["10px", "0px", "0px", "0px", "0px"]
                     ),
                 rx.grid_item(
                     rx.link(
                         rx.card(
-                        rx.text("2Body of the Card Component"),
-                        header=rx.heading("Header", size="lg"),
-                        footer=rx.heading("Footer", size="sm"),
+                        rx.text("Metaverso en producción..."),
+                        header=rx.heading("Metaverse", size="lg"),
+                        footer=rx.heading("Next.js, Three.js", size="sm"),
                         height="100%",
                         transition= "all 0.3s ease-in-out",
                         _hover={
@@ -42,18 +43,19 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="#",
+                    href="https://mendozalz-metaverse.vercel.app/",
                     is_external=True
                     ),
+                    row_span=0,
                     col_span=2,
                     margin_bottom=["10px", "0px", "0px", "0px", "0px"]
                     ),
                 rx.grid_item(
                     rx.link(
                         rx.card(
-                        rx.text("3Body of the Card Component"),
-                        header=rx.heading("Header", size="lg"),
-                        footer=rx.heading("Footer", size="sm"),
+                        rx.text("Simulación de recorrido de 360 grados..."),
+                        header=rx.heading("Recorrido 360°", size="lg"),
+                        footer=rx.heading("Marzipano, JS, HTML, CSS", size="sm"),
                         height="100%",
                         transition= "all 0.3s ease-in-out",
                         _hover={
@@ -61,18 +63,19 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="#",
+                    href="https://marzipano.netlify.app/",
                     is_external=True
                     ),
+                    row_span=0,
                     col_span=2,
                     margin_bottom=["10px", "0px", "0px", "0px", "0px"]
                     ),
                 rx.grid_item(
                     rx.link(
                         rx.card(
-                        rx.text("4Body of the Card Component"),
-                        header=rx.heading("Header", size="lg"),
-                        footer=rx.heading("Footer", size="sm"),
+                        rx.text("Mi primer portafolio con excelente redimiento en Lighthouse..."),
+                        header=rx.heading("Portafolio principal", size="lg"),
+                        footer=rx.heading("Astro.js", size="sm"),
                         height="100%",
                         transition= "all 0.3s ease-in-out",
                         _hover={
@@ -80,27 +83,30 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="#",
+                    href="https://mendozalz.vercel.app/",
                     is_external=True
                     ),
+                    row_span=0,
                     col_span=3,
                     display=["none", "grid", "grid", "grid", "grid"]
                     ),
                 rx.grid_item(
                     rx.link(
                         rx.card(
-                        rx.text("5Body of the Card Component"),
-                        header=rx.heading("Header", size="lg"),
-                        footer=rx.heading("Footer", size="sm"),
+                        rx.text("FrontEnd propuesta Meet de reuniones virtuales..."),
+                        header=rx.heading("GC Meet", size="lg"),
+                        footer=rx.heading("Angular 16", size="sm"),
                         transition= "all 0.3s ease-in-out",
+                        height="100%",
                         _hover={
                             "box_shadow": f"1px 1px {COLORES.NES.value}, 6px 6px {COLORES.NES.value}, 3px 3px {COLORES.NES.value}",
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="#",
+                    href="https://gc-meet.netlify.app/",
                     is_external=True
                     ),
+                    row_span=0,
                     col_span=1,
                     display=["none", "grid", "grid", "grid", "grid"]
                     ),

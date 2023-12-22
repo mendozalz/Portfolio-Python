@@ -8,25 +8,35 @@ def  card() -> rx.Component:
             rx.image(src="mendozalz_132_217.jpg", width="64px", height="106px", position="relative", z_index="1", top="25px", left="13px", transform="scale(1)" ),
             class_name= "nes-smartphone",
             transform= "scale(2)",
-            top="120px",
-            left=["135px", "65px", "65px", "105px", "105px"],
+            top="160px",
+            left=["130px", "65px", "120px", "120px", "120px"],
             z_index="1"
         ),
         rx.box(
             rx.vstack(
+                rx.link(
+                    rx.span(
+                    class_name="nes-icon whatsapp is-medium", 
+                    position="absolute", 
+                    top="20px", 
+                    margin="0px !important"),
+                    href="https://api.whatsapp.com/send?phone=5730224082997&text=Hola%20Lenin%20he%20visto%20tu%20portafolio%20y%20quisiera%20hablar%20contigo,%20tienes%20tiempo%20disponible%20para%20platicar?",
+                    is_external=True
+                ),
                 rx.span("Tlf:"),
                 rx.span("+573022408297"),
                 rx.text("Soy un apasionado desarrollador web que disfruta experimentando con diversas tecnologías", line_height="20px", font_size=SIZE.PEQUENO.value),
-                top="190px", 
+                padding_top="75px", 
                 font_size=SIZE.INTERMEDIO.value,
-                position="relative",
                 align_items="start"
             ),
             class_name="nes-container is-rounded",
+            position="relative",
             color=COLORES.BLANCO.value,
             width="210px",
-            height="400px",
+            height="300px",
             padding="10px !important",
+            margin_top="130px !important",
             background=COLORES.SECUNDARY.value
         ),
         rx.box(

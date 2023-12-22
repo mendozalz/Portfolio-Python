@@ -5,7 +5,7 @@ class FONT(Enum):
 
 class SIZE(Enum):
     PEQUENO = "0.7em"
-    INTERMEDIO = "0.9em"
+    INTERMEDIO = "0.9em !important"
     NORMAL = "1em"
     MEDIANO = "1.5em"
     GRANDE = "2em"
