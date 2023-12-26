@@ -9,9 +9,9 @@
 
 ## Proyecto web "Portafolio" con Python puro y Reflex
 
-![https://adviento.dev](assets/favicon.ico)
+![https://mendozalz-python.vercel.app/](assets/favicon.ico)
 
-### Visita [https://portfolio](https://adviento.dev)
+### Visita [https://portfolio](https://mendozalz-python.vercel.app/)
 
 ## Configuración en local
 

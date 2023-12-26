@@ -6,9 +6,9 @@ from portafolio_reflex.styles.fonst_size import SIZE
 def footer() -> rx.Component:
     # Lista de diccionarios que contiene la información de cada imagen y enlace
     images_links_data = [
-        {"src": "/Linkeding.png", "width": "30px", "height": "auto", "filter": "invert(0%) sepia(25%) saturate(0%) hue-rotate(61deg) brightness(104%) contrast(100%)", "href": "https://dub.sh/linkedin-python", "is_external": True, "class_name":"icon_footer"},
-        {"src": "/GitHub.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "https://dub.sh/github-python", "is_external": True, "class_name":"icon_footer"},
-        {"src": "/notion.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "https://dub.sh/notion-python", "is_external": True, "class_name":"icon_footer"}
+        {"src": "/Linkeding.png", "width": "30px", "height": "auto", "filter": "invert(0%) sepia(25%) saturate(0%) hue-rotate(61deg) brightness(104%) contrast(100%)", "href": "https://dub.sh/linkedin-python", "alt": "icono de linkeding", "is_external": True, "class_name":"icon_footer"},
+        {"src": "/GitHub.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "https://dub.sh/github-python", "alt": "icono de github", "is_external": True, "class_name":"icon_footer"},
+        {"src": "/notion.png", "width": "30px", "height": "auto", "filter": "invert(41%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(99%) contrast(97%)", "href": "https://dub.sh/notion-python", "alt": "icono de notion", "is_external": True, "class_name":"icon_footer"}
     ]
 
     # Crear dinámicamente las imágenes y enlaces usando la información de la lista
@@ -20,6 +20,7 @@ def footer() -> rx.Component:
                 height=image["height"], 
                 filter=image["filter"]), 
                 href=image["href"], 
+                alt=image["alt"],
                 is_external=image["is_external"],
                 class_name=image['class_name']
                 ) for image in images_links_data]

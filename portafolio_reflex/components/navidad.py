@@ -102,6 +102,7 @@ def  navidad() -> rx.Component:
                 padding= "20px",
                 max_height=["35vh", "20vh", "20vh", "20vh", "20vh"],
                 bottom=["20px", "60px", "60px", "auto", "auto"],
+                alt="Imagen de un arbolito animado",
                 class_name="arbolito"
             ),
             rx.html(
@@ -111,6 +112,7 @@ def  navidad() -> rx.Component:
                 top= ["auto", "auto", "auto", "215px", "215px"],
                 left= ["-20px", "-5px", "-13px", "-13px", "-13px"],
                 bottom=["0px", "6px", "6px", "auto", "auto"],
+                alt="Letra de Feliz Navidad"
             ),
         ),
         class_name="navidad"

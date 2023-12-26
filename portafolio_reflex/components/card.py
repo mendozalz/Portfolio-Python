@@ -5,7 +5,7 @@ from portafolio_reflex.styles.fonst_size import SIZE
 def  card() -> rx.Component:
     return rx.container(
         rx.box(
-            rx.image(src="mendozalz_132_217.jpg", width="64px", height="106px", position="relative", z_index="1", top="25px", left="13px", transform="scale(1)" ),
+            rx.image(src="mendozalz_132_217.jpg", width="64px", height="106px", position="relative", z_index="1", top="25px", left="13px", transform="scale(1)", alt="foto imagen de Lenin Mendoza" ),
             class_name= "nes-smartphone",
             transform= "scale(2)",
             top="160px",
