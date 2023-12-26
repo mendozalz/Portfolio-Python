@@ -18,7 +18,7 @@ def  vista_comentario() -> rx.Component:
                     rx.heading(
                         rx.text("¿Hey y que técnologias manejas actualmente?"),
                         class_name="nes-balloon from-left is-dark",
-                        font_size=[SIZE.MEDIANO.value, SIZE.GRANDE_x1.value, SIZE.GRANDE_x1.value, SIZE.GRANDE_x1.value, SIZE.GRANDE_x1.value]
+                        font_size=[SIZE.MEDIANO.value, SIZE.GRANDE_x1.value, SIZE.GRANDE_x1.value, SIZE.GRANDE_x1.value, SIZE.GRANDE_x1.value],
                     ),
                     rx.span(
                         class_name="nes-bcrikko",
@@ -46,6 +46,6 @@ def  vista_comentario() -> rx.Component:
                 height="100vh",
                 ),
         ),
-        class_name="nes-container is-dark",
+        class_name="nes-container is-dark comentario seccion-gsap",
     )
 vista = vista_comentario()

@@ -11,5 +11,6 @@ def  reloj() -> rx.Component:
         padding_top="15px",
         opacity="0.07"
         ),
-        rx.script(src="/js/hora.js")
+        rx.script(src="/js/hora.js"),
+        rx.script(src="/js/lenis.js")       
     )

@@ -5,17 +5,17 @@ from ..components.repos import repos
 
 repositorios = [
     {
-        "url": "https://github.com/mendozalz/Portafolio",
+        "url": "https://dub.sh/repo1-python",
         "name":"{Portfolio Astro}", 
         "descripcion":"Implementación hecha en Astro basada en el tema original de PaabloLC con cambios personalizados basado en mis necesidades."
     },
     {
-        "url": "https://github.com/mendozalz/ReactEstadia",
+        "url": "https://dub.sh/repo2-python",
         "name":"{React Estadia}", 
         "descripcion":"Proyecto React estadia como parte del aprendizaje en el uso de: React-router-dom, React Form, el uso de Watch y manipulación para impresión o descarga de documcumento PDF."
     },
     {
-        "url": "https://github.com/mendozalz/metaverse",
+        "url": "https://dub.sh/repo3-python",
         "name":"{Metaverse}", 
         "descripcion":"Proyecto experimental de un metaverso creado con Next.js + Three.js experimentando el curso del mundo en 3D, las carteras digitalesy los NFT"
     },
@@ -42,7 +42,7 @@ def  vista_repos() -> rx.Component:
             template_columns="300px 1fr",
             align_items="center",
             width="100%",
-            #height="100%",
             display=["block", "block", "grid", "grid", "grid"],
         ),
+    class_name="repos seccion-gsap"
     )

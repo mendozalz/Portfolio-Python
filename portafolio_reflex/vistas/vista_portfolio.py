@@ -23,7 +23,7 @@ def  vista_portfolio() -> rx.Component:
                         },
                         padding_y="0px"
                         ),
-                    href="https://github.com/mendozalz/api-poemas",
+                    href="https://dub.sh/api-poemas-python",
                     is_external=True
                     ),
                     row_span=2, 
@@ -43,7 +43,7 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="https://mendozalz-metaverse.vercel.app/",
+                    href="https://dub.sh/metaverse-python",
                     is_external=True
                     ),
                     row_span=0,
@@ -63,7 +63,7 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="https://marzipano.netlify.app/",
+                    href="https://dub.sh/marzipano-python",
                     is_external=True
                     ),
                     row_span=0,
@@ -83,7 +83,7 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="https://mendozalz.vercel.app/",
+                    href="https://dub.sh/vercel-python",
                     is_external=True
                     ),
                     row_span=0,
@@ -103,7 +103,7 @@ def  vista_portfolio() -> rx.Component:
                             "transform": "translateX(-3px)",
                         }
                         ),
-                    href="https://gc-meet.netlify.app/",
+                    href="https://dub.sh/meet-python",
                     is_external=True
                     ),
                     row_span=0,
@@ -125,5 +125,8 @@ def  vista_portfolio() -> rx.Component:
             display="flex",
             align_items="center"
             ),
-            footer(),
+    footer(),
+    bg=COLORES.PRIMARIO.value,
+    position="relative",
+    class_name="portfolio seccion-gsap",
     )

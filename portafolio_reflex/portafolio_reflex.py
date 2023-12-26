@@ -6,7 +6,6 @@ from .vistas.vista_repos import vista_repos
 from .vistas.vista_comentario import vista_comentario
 from .vistas.vista_portfolio import vista_portfolio
 
-
 from .components.contenedor import contenedor
 from portafolio_reflex.components.banner import banner
 from portafolio_reflex.components.navidad import navidad
@@ -31,7 +30,7 @@ def index() -> rx.Component:
             display=["block", "block", "flex", "flex", "flex"],
             class_name="horizontalStack"    
             ),
-            class_name="containerStack"
+            class_name="containerStack hero"
         ),
         rx.flex(
             rx.divider(variant="dashed", opacity="1", border_color="black", border_width="medium"),
@@ -47,7 +46,11 @@ def index() -> rx.Component:
 
 app = rx.App(
     stylesheets=styles.STYLESHEET,
-    style=styles.BASE_STYLE
+    style=styles.BASE_STYLE,
+    head_components=[rx.script(src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"),
+    rx.script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"),
+    rx.script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"),
+            ]
 )
 app.add_page(
     index,

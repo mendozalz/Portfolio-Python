@@ -3,6 +3,8 @@ from ..components.contenedor import contenedor
 from ..styles.colores import COLORES
 from portafolio_reflex.components.reloj import reloj
 from portafolio_reflex.components.logo import logo
+from portafolio_reflex.components.banner import banner
+from portafolio_reflex.components.navidad import navidad
 
 
 def  vista_hero() -> rx.Component:
@@ -29,5 +31,7 @@ def  vista_hero() -> rx.Component:
                 margin_top="10px"
             ),
         height="100vh",
+        #z_index=-1
         ),
+    class_name="hero seccion-gsap"
     )

@@ -21,8 +21,12 @@ BASE_STYLE = {
             "opacity": "0.6"
         }
     },
+
+    # Navidad
+
     "svg": {
-    "max_height": "20vh",
+    "max_height":["12vh", "20vh", "20vh", "20vh", "20vh" ],
+    "width": "auto",
     "overflow": "visible",
     },
     "path": {
@@ -52,5 +56,50 @@ BASE_STYLE = {
   "100%": {
     "transform": "translateY(0px) scale(0)",
   }
+},
+
+# Feliz Navidad
+
+"svg.feliz": {
+  "max_height":["4vh", "20vh", "20vh", "20vh", "20vh" ],
+  "width": "auto",
+},
+
+
+
+"@keyframes blink-caret": {
+
+    "0%": {
+        "border_color": "transparent",
+    },
+
+    "50%": {
+        "border_color": "#ffffff"
+    }
+},
+
+
+# Lenis
+
+"html.lenis": {
+  "height": "auto"
+},
+
+".lenis.lenis-smooth": {
+  "scroll-behavior": "auto"
+},
+
+".lenis.lenis-smooth [data-lenis-prevent]": {
+  "overscroll-behavior": "contain"
+},
+
+".lenis.lenis-stopped": {
+  "overflow": "hidden"
+},
+
+".lenis.lenis-scrolling iframe": {
+  "pointer-events": "none"
 }
+
+
 }

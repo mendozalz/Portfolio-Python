@@ -15,5 +15,6 @@ def  banner() -> rx.Component:
         bg=COLORES.NEGRO.value,
         height=[SIZE.GRANDE.value, SIZE.GRANDE_X2.value, SIZE.GRANDE_X2.value, SIZE.GRANDE.value, SIZE.GRANDE.value],
         color=COLORES.BLANCO.value,
-        )
+        ),
+    class_name="hero"
     )
