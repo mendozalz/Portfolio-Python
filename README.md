@@ -90,7 +90,6 @@ Configuración en Vercel:
 - Se ha asociado el repositorio de GitHub al proyecto (para que cada `push` en la rama `main` desencadene un nuevo despliegue)
 - Build & Development Settings: Other
 - Root Directory: `public` (que contiene el empaquetado estático para producción)
-- Custom Domain: adviento.dev
 
 ## Recursos utilizados
 
