@@ -17,7 +17,6 @@ from portafolio_reflex.styles.fonst_size import SIZE
 def index() -> rx.Component:
     return rx.box(
         banner(),
-        navidad(),
         rx.container(
             rx.hstack(
                 rx.vstack(
